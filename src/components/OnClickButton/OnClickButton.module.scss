@@ -1,5 +1,12 @@
 @import url(../../globaleScss.scss);
 
 .OnClickButton{
-    color: orange;
+    margin-top: 1rem;
+    padding: 8px 14px;
+    background: var(--clamShell);
+    border: 1px solid var(--blackCow);
+    border-radius: 5px;
+    box-shadow: 3px 9px 12px -3px rgba(131, 130, 130, 0.36);
+    color: var(--blackCow);
+    font-size: 16px;
 }

@@ -28,7 +28,8 @@ export function Home() {
                                 <img src={item.image} alt="" />
                                 <figcaption>
                                     <h3>{item.name}</h3>
-                                    <OnClickButton clickEvent={() => alert('Du har klikket')} text={"Læs mere"}/>
+                                    <p>{item.genres[0].title}</p>
+                                    <OnClickButton clickEvent={() => alert('Du har klikket')}>Læs mere</OnClickButton>                                
                                 </figcaption>
                             </figure>
                         )
