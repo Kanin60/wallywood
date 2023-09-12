@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react"
 import style from "./Home.module.scss"
 import hero from "../../assets/homeHero.jpg";
+import { OnClickButton } from "../../components/OnClickButton/OnClickButton";
 
 export function Home() {
-    const [ posters, setPosters ] = useState()
+    const [ posters, setPosters ] = useState([])
     const [ slicedPoster, setSlicedPoster] = useState()
 
     useEffect(() => {
-        const url = "http://localhost:4000/poster/list"
+        const url = "http://localhost:4000/poster/list?limit=2"
         fetch(url).then(res => res.json()).then(data => setPosters(data))
         
     },[])
@@ -21,13 +22,13 @@ export function Home() {
             <h2>Sidste nyt...</h2>
             <div>
                 {
-                    posters.slice(0,2)?.map((item, index) => {
+                    posters?.map((item, index) => {
                         return(
                             <figure key={index}>
                                 <img src={item.image} alt="" />
                                 <figcaption>
                                     <h3>{item.name}</h3>
-
+                                    <OnClickButton clickEvent={() => alert('Du har klikket')} text={"Læs mere"}/>
                                 </figcaption>
                             </figure>
                         )
