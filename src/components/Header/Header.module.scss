@@ -1,0 +1,19 @@
+@import url(../../globaleScss.scss);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Titillium+Web:wght@300;700;900&display=swap');
+
+.headerstyle{
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-family: var(--header134);
+        font-weight: 900;
+        font-size: 64px;
+        color: var(--terraCotta);
+        text-transform: uppercase;
+    }
+    .cart{
+        font-size: 2rem;
+        color: var(--blackCow);
+    }
+}

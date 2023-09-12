@@ -1,0 +1,31 @@
+@import url(../../globaleScss.scss);
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 2px solid var(--redwood);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    ul{
+        list-style: none;
+        h4{
+            font-family: var(--header134);
+            font-size: 25px;
+            color: var(--terraCotta);
+            text-transform: uppercase;
+        }
+        li{
+            font-family: var(--header2p);
+        }
+    }
+    figure{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .footerIcon{
+            font-size: 2.5rem;
+            color: var(--smokeyGrey);
+            justify-content: end;
+        }
+    }
+}

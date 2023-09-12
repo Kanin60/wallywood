@@ -1,0 +1,37 @@
+.home{
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem 0;
+    img{
+        width: 100%;
+        border-radius: 6px;
+    }
+    h2{
+        margin: 1.5rem 0;
+        font-family: var(--header2p);
+        color: var(--terraCotta);
+    }
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        figure{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            img{
+                width: 100%;
+            }
+            h3{
+                font-family: var(--header134);
+                font-size: 25px;
+                color: var(--blackCow);
+                margin-bottom: 1rem;
+            }
+            p{
+                font-family: var(--header2p);
+                color: var(--blackCow);
+            }
+        }
+    }
+}
