@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { NavLink } from 'react-router-dom'
 import style from "./Home.module.scss"
 import hero from "../../assets/homeHero.jpg";
 import { OnClickButton } from "../../components/OnClickButton/OnClickButton";
@@ -11,6 +12,8 @@ export function Home() {
         const url = "http://localhost:4000/poster/list?limit=2"
         fetch(url).then(res => res.json()).then(data => setPosters(data))
     },[])
+
+
 
     return(
         <section className={style.home}>
@@ -25,7 +28,7 @@ export function Home() {
                                 <figcaption>
                                     <h3>{item.name}</h3>
                                     <p>{item.genres[0].title}</p>
-                                    <OnClickButton clickEvent={() => alert('Du har klikket')}>Læs mere</OnClickButton>                                
+                                    <OnClickButton><NavLink style={{textDecoration: "none", color:"#524641"}} to="/details" >Læs mere</NavLink></OnClickButton>                                
                                 </figcaption>
                             </figure>
                         )

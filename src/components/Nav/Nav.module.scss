@@ -2,6 +2,8 @@
 
 .navigation{
     border-bottom: 2px solid var(--redwood);
+    max-width: 1000px;
+    margin: auto;
     ul{
         display: flex;
         flex-direction: row;

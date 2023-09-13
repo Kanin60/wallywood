@@ -1,0 +1,31 @@
+@import url(../../globaleScss.scss);
+
+.details{
+    max-width: 1000px;
+    margin: auto;
+    figure{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 1rem;
+    }
+    img{
+        width: 100%;
+    }
+    article{
+        h3{
+                font-family: var(--header134);
+                font-size: 25px;
+                color: var(--terraCotta);
+                text-transform: uppercase;
+        }
+        p{
+            font-family: var(--header2p);
+            color: var(--smokeyGrey);
+            margin-bottom: 10px;
+        }
+    }
+    div{
+        display: flex;
+        justify-content: end;
+    }
+}
