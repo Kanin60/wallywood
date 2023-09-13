@@ -1,6 +1,8 @@
 @import url(../../globaleScss.scss);
 
 .footer{
+    max-width: 1000px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: 2px solid var(--redwood);
@@ -16,6 +18,13 @@
         }
         li{
             font-family: var(--header2p);
+            a{
+                text-decoration: none;
+                color: var(--black);
+            }
+            a:hover{
+                color: var(--terraCotta);
+            }
         }
     }
     figure{

@@ -1,7 +1,10 @@
-
+import style from "./Plakater.module.scss";
+import { Headline } from "../../components/Headline/Headline";
 export function Plakater() {
 
     return(
-        <p>Her er Plakater-Siden</p>
+        <section className={style.plakater}>
+            <Headline>Plakater</Headline>
+        </section>
     )    
 }

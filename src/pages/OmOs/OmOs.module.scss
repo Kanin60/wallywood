@@ -1,6 +1,8 @@
 @import url(../../globaleScss.scss);
 
 .OmOs{
+    max-width: 1000px;
+    margin: auto;
     figure{
         display: grid;
         grid-template-columns: 1fr 35%;
@@ -12,7 +14,7 @@
         figcaption{
             p{
                 margin-bottom: 2rem;
-                font-size: 18px;
+                font-size: 16px;
                 font-family: var(--header2p);
             }
         }

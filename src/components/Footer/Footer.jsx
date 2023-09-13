@@ -12,7 +12,7 @@ export const Footer = () => {
             </ul>
             <ul>
                 <li>CVR: 12345678</li>
-                <li>MAIL: info@plakatshoppen.dk</li>
+                <li><a href="mailto:info@plakatshoppen.dk">MAIL: info@plakatshoppen.dk</a></li>
                 <li>MOBIL: 9812 3456</li>
             </ul>
             <figure>
