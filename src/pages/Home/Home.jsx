@@ -28,7 +28,7 @@ export function Home() {
                                 <figcaption>
                                     <h3>{item.name}</h3>
                                     <p>{item.genres[0].title}</p>
-                                    <OnClickButton><NavLink style={{textDecoration: "none", color:"#524641"}} to="/details" >Læs mere</NavLink></OnClickButton>                                
+                                    <OnClickButton><NavLink style={{textDecoration: "none", color:"#524641"}} to={`/details/${item.slug}`} >Læs mere</NavLink></OnClickButton>                                
                                 </figcaption>
                             </figure>
                         )

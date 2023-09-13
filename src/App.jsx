@@ -20,7 +20,7 @@ function App() {
           <Route path="/om" element={<OmOs/>}/>
           <Route path="/kontakt" element={<Kontakt/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/details" element={<Details/>}/>
+          <Route path="/details/:slug" element={<Details/>}/>
           <Route path="/*" element={<Error/>}/>
         </Route>
     </Routes>
