@@ -1,0 +1,20 @@
+@import url(../../globaleScss.scss);
+
+.OmOs{
+    figure{
+        display: grid;
+        grid-template-columns: 1fr 35%;
+        gap: 4rem;
+        padding-bottom: 1.5rem;
+        img{
+            width: 100%;
+        }
+        figcaption{
+            p{
+                margin-bottom: 2rem;
+                font-size: 18px;
+                font-family: var(--header2p);
+            }
+        }
+    }
+}
