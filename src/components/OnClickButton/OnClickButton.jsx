@@ -1,4 +1,3 @@
-import { Children } from "react";
 import style from "./OnClickButton.module.scss";
 
 export const OnClickButton = ({clickEvent, children}) => {

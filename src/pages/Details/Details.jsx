@@ -37,7 +37,7 @@ export function Details() {
                 </figure>
             }
             <div>
-                <OnClickButton><NavLink style={{textDecoration: "none", color:"#524641"}} to="/" >Tilbage</NavLink></OnClickButton>                                
+                <OnClickButton><NavLink style={{textDecoration: "none", color:"#524641"}} to="/" >Tilbage til home</NavLink></OnClickButton>                                
             </div>
         </section>
     )

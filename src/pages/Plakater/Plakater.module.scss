@@ -27,9 +27,11 @@
                     list-style: none;
                     a{
                         font-family: var(--header2p);
+                        color: var(--terraCotta);
                     }
                     a:hover{
                         text-decoration: underline;
+                        color: var(--blackCow);
                     }
                 }
             }

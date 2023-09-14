@@ -1,6 +1,7 @@
 import style from "./Kontakt.module.scss";
 import { Headline } from "../../components/Headline/Headline";
 import { OnClickButton } from "../../components/OnClickButton/OnClickButton";
+import { useForm } from "react-hook-form";
 
 export function Kontakt() {
 

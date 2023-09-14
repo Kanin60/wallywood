@@ -27,6 +27,7 @@ export function Plakater() {
     return(
         <section className={style.plakater}>
             <Headline>Plakater</Headline>
+            <h2 style={{textTransform: "capitalize", fontFamily:"var(--header134)", textAlign:"end", color:"var(--blackCow)"}}>{slug}</h2>
             <div>
             <aside className={style.aside}>
                 <h3>Filtre</h3>
@@ -52,7 +53,7 @@ export function Plakater() {
                     <input type="number" placeholder="3800"/>
                 </div>
             </aside>
-                <figure> 
+                <figure>                     
                     {
                         poster?.map((item, index) => {
                             return(
