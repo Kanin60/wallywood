@@ -1,7 +1,12 @@
+import style from "./Login.module.scss"
 
 export function Login() {
 
+    //lav både login og oprettelse
     return(
-        <p>Her er Login-Siden</p>
+        <section className={style.login}>
+            <p>Her er login</p>
+
+        </section>
     )    
 }

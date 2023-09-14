@@ -1,0 +1,33 @@
+@import url(../../globaleScss.scss);
+.kontakt{
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 15rem;
+    
+    div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        label{
+            margin: 7px 0;
+            font-family: var(--header2p);
+            font-size: 20px;
+            span{
+                color: red;
+            }
+        }
+        input{
+            border: none;
+            border-top: 4px solid var(--clamShell);
+            background-color: #fff;
+            padding: 7px;
+            font-family: var(--header2p);
+        }
+        textarea{
+            border: none;
+            border-top: 4px solid var(--clamShell);
+            resize: none;
+        }
+    }
+    
+}
