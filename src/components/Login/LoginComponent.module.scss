@@ -1,22 +1,17 @@
 @import url(../../globaleScss.scss);
-.kontakt{
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 15rem;
-    
-    div{
-        width: 40%;
-        display: flex;
-        flex-direction: column;    
-        }
-        textarea{
-            border: none;
-            border-top: 3px solid var(--clamShell);
-            resize: none;
+
+.loginComponent{
+    form{
+        width: 30vw;
+        div{
+            display: grid;
+            grid-template-columns: 1fr;
         }
         input[type=submit]{
-            margin-top: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
             padding: 8px 14px;
+            width: 10rem;
             background: var(--clamShell);
             border: 1px solid var(--blackCow);
             border-radius: 5px;
@@ -29,5 +24,6 @@
             cursor: pointer;
             color: var(--terraCotta);
         }
+
     }
-    
+}

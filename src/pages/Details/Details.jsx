@@ -6,30 +6,30 @@ import { OnClickButton } from "../../components/OnClickButton/OnClickButton";
 export function Details() {
 
     const [details, setDetails] = useState([])
-    const {slug} = useParams()
-    
+    const { slug } = useParams()
+
     useEffect(() => {
         const urlDetails = `http://localhost:4000/poster/details/${slug}`
         fetch(urlDetails).then(res => res.json()).then(data => setDetails(data))
-    },[])
+    }, [])
     let description = details.description
-    
 
 
-    return(
+
+    return (
         <section className={style.details}>
             {
-            details &&
+                details &&
                 <figure>
                     <img src={details.image} alt={details.name} />
                     <article>
                         <h3>{details.name}</h3>
                         {details.genres?.map((item, index) => {
-                            return(
+                            return (
                                 <p key={index}>{item.title}</p>
                             )
                         })}
-                        <p>Beskrivelse: { description ? description : "Kommer snart..."}</p>
+                        <p>Beskrivelse: {description ? description : "Kommer snart..."}</p>
                         <p>Størrelse: {details.width} x {details.height}</p>
                         <p>Pris: {details.price}</p>
                         <p>Lager: {details.stock}</p>
@@ -37,7 +37,7 @@ export function Details() {
                 </figure>
             }
             <div>
-                <OnClickButton><NavLink style={{textDecoration: "none", color:"#524641"}} to="/" >Tilbage til home</NavLink></OnClickButton>                                
+                <OnClickButton><NavLink style={{ textDecoration: "none", color: "#524641" }} to="/" >Tilbage til home</NavLink></OnClickButton>
             </div>
         </section>
     )

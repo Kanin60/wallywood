@@ -1,8 +1,10 @@
 @import url(../../globaleScss.scss);
 
 .OnClickButton{
+    margin: auto;
     margin-top: 1rem;
     padding: 8px 14px;
+    width: 10rem;
     background: var(--clamShell);
     border: 1px solid var(--blackCow);
     border-radius: 5px;

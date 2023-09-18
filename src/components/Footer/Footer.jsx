@@ -3,7 +3,7 @@ import { FaPinterestSquare, FaInstagramSquare, FaFacebookSquare, FaTwitterSquare
 
 export const Footer = () => {
 
-    return(
+    return (
         <footer className={style.footer}>
             <ul>
                 <h4>Wallywood</h4>
@@ -16,10 +16,10 @@ export const Footer = () => {
                 <li>MOBIL: 9812 3456</li>
             </ul>
             <figure>
-                <FaPinterestSquare className={style.footerIcon} />
-                <FaInstagramSquare className={style.footerIcon} />
-                <FaFacebookSquare className={style.footerIcon} />
-                <FaTwitterSquare className={style.footerIcon} />
+                <a href="https://www.pinterest.dk/" target="_blank"><FaPinterestSquare className={style.footerIcon} /></a>
+                <a href="https://www.instagram.com/" target="_blank"><FaInstagramSquare className={style.footerIcon} /></a>
+                <a href="https://www.facebook.com/" target="_blank"><FaFacebookSquare className={style.footerIcon} /></a>
+                <a href="https://twitter.com/" target="_blank"><FaTwitterSquare className={style.footerIcon} /></a>
             </figure>
         </footer>
     )
