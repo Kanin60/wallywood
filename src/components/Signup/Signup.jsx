@@ -7,7 +7,7 @@ import style from "./Signup.module.scss";
 export const Signup = () => {
 
     const { register, handleSubmit, formState: { errors }, } = useForm();
-
+    // opretter ny user - sender data til api'et fra formen nedenfor
     const onSubmit = (data) => {
         const url = "http://localhost:4000/users"
         const body = new URLSearchParams()
@@ -23,6 +23,7 @@ export const Signup = () => {
         fetch(url, options).then(res => res.json()).then(data => console.log(data))
     };
 
+    //retunerer en form med flere input som hver har validering og error handlinger
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={style.signup}>
             {" "}

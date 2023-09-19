@@ -3,8 +3,7 @@ import style from "./OmOs.module.scss"
 import star from "../../assets/star.png";
 
 export function OmOs() {
-
-    return(
+    return (
         <section className={style.OmOs}>
             <Headline>Om os</Headline>
             <figure>
@@ -16,5 +15,5 @@ export function OmOs() {
                 <img src={star} alt="Stjerne" />
             </figure>
         </section>
-    )    
+    )
 }

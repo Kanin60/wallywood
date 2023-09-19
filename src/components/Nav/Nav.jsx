@@ -2,11 +2,12 @@ import style from './Nav.module.scss'
 import { NavLink } from 'react-router-dom'
 
 export const Nav = () => {
+    //ændre style(farve og underline) når der bliver trykket på linket
+    const activeStyle = ({ isActive, isPending }) => { return { color: isActive ? "#D97852" : "", textDecoration: isActive ? "underline" : "" } }
 
-    const activeStyle = ({isActive, isPending}) => {return {color: isActive ? "#D97852" : "", textDecoration: isActive ? "underline" : ""}}
-    
+    //retunerer en navigationsbar som ændre outlet
     return (
-        <nav className={style.navigation}> 
+        <nav className={style.navigation}>
             <ul>
                 <NavLink to="/" style={activeStyle}>Home</NavLink>
                 <NavLink to="/plakater" style={activeStyle}>Plakater</NavLink>

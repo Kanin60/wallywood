@@ -10,9 +10,10 @@ import style from "./LoginComponent.module.scss";
 export const LoginComponent = () => {
 
     const { setUser } = useContext(LoginContext)
-
     const { register, handleSubmit, formState: { errors }, } = useForm();
 
+    /*funktion som sender username og password til api'en og updatere useren i LoginContext, 
+    så man er logget ind "globalt" på appen*/
     const onSubmit = (data) => {
         const url = "http://localhost:4000/login"
         const body = new URLSearchParams()
@@ -23,14 +24,14 @@ export const LoginComponent = () => {
     };
 
 
-
+    //retunerer en form med 2 input som hver har validering og en error handling
     return (
         <>
             <Headline>Login</Headline>
             <section className={style.loginComponent}>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div>
-                        <StyledILabel>Brugernavn:{" "}</StyledILabel>
+                        <StyledILabel>Email:{" "}</StyledILabel>
                         <StyledInput {...register("username", { required: true, minLength: 2 })} />
                         {errors.username?.type === "required" && (<span>Du skal skrive dit fornavn</span>)}
 

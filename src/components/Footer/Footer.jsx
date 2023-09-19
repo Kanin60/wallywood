@@ -2,7 +2,7 @@ import style from "./Footer.module.scss";
 import { FaPinterestSquare, FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa"
 
 export const Footer = () => {
-
+    //retunerer footer med 2 lister med infomation om virksomheden og ikoner(a) som åbner nyt faneblad.
     return (
         <footer className={style.footer}>
             <ul>

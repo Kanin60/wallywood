@@ -8,6 +8,7 @@ export function Details() {
     const [details, setDetails] = useState([])
     const { slug } = useParams()
 
+    //henter detalijer fra en plakat via slug, som sendes med fra Home-siden.
     useEffect(() => {
         const urlDetails = `http://localhost:4000/poster/details/${slug}`
         fetch(urlDetails).then(res => res.json()).then(data => setDetails(data))
@@ -15,7 +16,7 @@ export function Details() {
     let description = details.description
 
 
-
+    //retunere et card/figure med data fra api'et
     return (
         <section className={style.details}>
             {

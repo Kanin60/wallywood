@@ -12,6 +12,7 @@ export function Kontakt() {
   } = useForm();
   const onSubmit = (data) => console.log(data);
 
+  //retunerer en form med validering og error handling.
   return (
     <section className={style.kontakt}>
       <Headline>Kontakt os</Headline>

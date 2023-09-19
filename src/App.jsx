@@ -12,6 +12,7 @@ import './App.css'
 
 function App() {
 
+  //dirigere og håndtere trafikken på app
   return (
     <BrowserRouter>
       <Routes>

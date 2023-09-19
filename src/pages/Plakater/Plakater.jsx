@@ -14,7 +14,7 @@ export function Plakater() {
 
 
     useEffect(() => {
-        //Fetcher liste af plakater under en genre
+        //Fetcher liste af plakater under en genre - får slug fra genres
         const url = `http://localhost:4000/poster/list/${slug}?limit=30`
         fetch(url).then(res => res.json()).then(data => setPoster(data))
         //Fetcher genres
@@ -22,6 +22,7 @@ export function Plakater() {
         fetch(urlGenres).then(res => res.json()).then(data => setGenres(data))
     }, [slug])
 
+    //tilføjer poster i cart-api'et
     function AddToCart(id) {
         const url = "http://localhost:4000/cart"
 
@@ -34,6 +35,7 @@ export function Plakater() {
 
     }
 
+    //retunerer en list med genres og en section med cards.
     return (
         <section className={style.plakater}>
             <Headline>Plakater</Headline>

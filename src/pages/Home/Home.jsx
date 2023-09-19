@@ -7,24 +7,24 @@ import { Headline } from "../../components/Headline/Headline";
 
 export function Home() {
     const [posters, setPosters] = useState([])
-
+    //henter 2 data fra poster-list api
     useEffect(() => {
         const url = "http://localhost:4000/poster/list?limit=2"
         fetch(url).then(res => res.json()).then(data => setPosters(data))
     }, [])
 
-    console.log("List of posters", posters);
-
+    /*retunerer "hero", overskrift og to cards med data fra poster-list api'et. 
+    Knappen i card'et sender slug'en med som et parameter til details*/
     return (
         <section className={style.home}>
-            <img src={hero} alt="" />
+            <img src={hero} alt="Smilende pige som sidder i en biograf" />
             <Headline>Sidste nyt...</Headline>
             <div>
                 {
                     posters?.map((item, index) => {
                         return (
                             <figure key={index}>
-                                <img src={item.image} alt="" />
+                                <img src={item.image} alt={item.name} />
                                 <figcaption>
                                     <h3>{item.name}</h3>
                                     <p>{item.genres[0].title}</p>

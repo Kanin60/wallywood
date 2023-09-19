@@ -4,9 +4,10 @@ import { Footer } from '../../components/Footer/Footer';
 import { Header } from "../../components/Header/Header";
 import style from "./MainLayout.module.scss";
 
+//selve opbygningen af siden
 export const MainLayout = () => {
 
-    return(
+    return (
         <div className={style.mainLayout}>
             <Header />
             <Nav />
