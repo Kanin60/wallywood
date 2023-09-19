@@ -1,8 +1,0 @@
-@import url(../../globaleScss.scss);
-
-.galleryContainer{
-    border: 1px solid blue;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-}

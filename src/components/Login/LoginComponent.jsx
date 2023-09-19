@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { LoginContext } from "../../LoginContext/LoginContext";
 import { StyledInput } from "../styles/input.styled";
 import { StyledILabel } from "../styles/label.styled";
+import { UserDetails } from "../../components/UserDetails/UserDetails";
 import style from "./LoginComponent.module.scss";
 
 export const LoginComponent = () => {
@@ -19,8 +20,6 @@ export const LoginComponent = () => {
         body.append("password", data.password)
         const options = { method: "POST", body: body }
         fetch(url, options).then(res => res.json()).then(data => setUser(data))
-        console.log("hvad data?", data);
-
     };
 
 

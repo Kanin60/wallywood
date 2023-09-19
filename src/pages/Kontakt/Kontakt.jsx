@@ -1,12 +1,10 @@
 import style from "./Kontakt.module.scss";
 import { Headline } from "../../components/Headline/Headline";
-import { OnClickButton } from "../../components/OnClickButton/OnClickButton";
 import { StyledInput } from "../../components/styles/input.styled"
 import { StyledILabel } from "../../components/styles/label.styled";
 import { useForm } from "react-hook-form";
 
 export function Kontakt() {
-  const regex = /^[a-zA-ZæÆøØåÅ -]+$/;
   const {
     register,
     formState: { errors },

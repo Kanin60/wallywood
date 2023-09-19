@@ -1,12 +1,15 @@
 import { useContext } from "react"
 import { LoginContext } from "../../LoginContext/LoginContext";
 
-
 export const UserDetails = () => {
-    const { User } = useContext(LoginContext)
+    const { user } = useContext(LoginContext)
 
-    console.log("Her er user fra UserDetails", User);
+    console.log("Her er user fra UserDetails", user);
     return (
-        <p>?</p>
+        <div>
+            {user &&
+                <p style={{ border: "none", color: "#524641" }}>{user.firstname ? "Velkommen " + user.firstname : ""}</p>
+            }
+        </div>
     )
 }
